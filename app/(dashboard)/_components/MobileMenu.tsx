@@ -9,6 +9,7 @@ import {
 } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import Logo from "./Logo";
+import NavbarRoutes from "./NavbarRoutes";
 
 const MobileMenu = () => {
   return (
@@ -20,7 +21,9 @@ const MobileMenu = () => {
         <div className="p-6">
           <Logo />
         </div>
-        <div className="flex flex-roww w-full px-6 pb-10"></div>
+        <div className="flex flex-roww w-full px-6 pb-10">
+          <NavbarRoutes />
+        </div>
       </SheetContent>
     </Sheet>
   );

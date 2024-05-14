@@ -35,7 +35,7 @@ const NavbarRoutes = () => {
   return (
     <div className="flex items-center space-x-8 z-50">
       {routes.map(route => (
-        <NavbarItem href={route.href} label={route.label} />
+        <NavbarItem key={route.href} href={route.href} label={route.label} />
       ))}
     </div>
   );

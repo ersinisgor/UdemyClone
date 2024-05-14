@@ -15,7 +15,7 @@ const NavbarItem = ({ href, label }: NavbarItemProps) => {
   const isActive =
     (pathname === "/" && href === "/") ||
     pathname === href ||
-    pathname?.startsWith("${href}/");
+    pathname?.startsWith(`${href}/`);
 
   return (
     <Link

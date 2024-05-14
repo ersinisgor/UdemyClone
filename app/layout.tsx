@@ -8,6 +8,7 @@ import {
   SignedOut,
   UserButton,
 } from "@clerk/nextjs";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <body className={inter.className}>
           <header></header>
           <main>{children}</main>
+          <Toaster />
         </body>
       </html>
     </ClerkProvider>

@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "./Logo";
 import SearchBar from "./SearchBar";
+import HeaderRoutes from "./HeaderRoutes";
+import MobileMenu from "./MobileMenu";
 
 const Header = () => {
   return (
@@ -9,6 +11,8 @@ const Header = () => {
         <div className="flex items-center justify-between gap-4">
           <Logo />
           <SearchBar />
+          <HeaderRoutes />
+          <MobileMenu />
         </div>
       </div>
     </header>
